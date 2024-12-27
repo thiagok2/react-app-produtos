@@ -509,7 +509,7 @@ A seguir, apenas o trecho do return:
 
 ## Criando um subcomponente de comentários - ProdutoComentarios
 
-Esse componente recebe como propriedade um produto e a partir dele vamos recuperar os comentários no
+18. Esse componente recebe como propriedade um produto e a partir dele vamos recuperar os comentários no
 produtosService. Esse componente vai ser referenciado no ProdutoDetalhe.js
 
 Vamos cria-lo:
@@ -532,7 +532,7 @@ export default ProdutoComentarios;
 
 Observe o parametro da função **{produto}**, ele é a referência do produto a qual os detalhes serão exibidos.
 
-Vamos retornar ao componente ProdutoDetalhe.js e vamos referênciar esse nosso novo componente.
+19. Vamos retornar ao componente ProdutoDetalhe.js e vamos referênciar esse nosso novo componente.
 ***ProdutoDetalhe.js***
 ```
 return (
@@ -576,7 +576,7 @@ return (
 ```
 *** Veja na tela!
 
-Vamos ao componente ProdutoComentarios, adicionando a lista de comentários:
+19. Vamos ao componente ProdutoComentarios, adicionando a lista de comentários:
 ```
 import React, { useEffect, useState } from 'react';
 import produtosService from '../services/ProdutosService';
@@ -604,7 +604,7 @@ const ProdutoComentarios = ({produto}) => {
 export default ProdutoComentarios;
 ```
 
-Com isso recuperamos a lista de comentários no produtoService.
+20. Com isso recuperamos a lista de comentários no produtoService.
 Mas até então não exibimos os comentários, estamos apenas exibido o texto comentários em h1.
 Vamos exibir a lista fazendo o já conhecido laço com a função **map** sobre a lista da variável comentarios:
 
@@ -642,7 +642,7 @@ Feito isso temos o componente ProdutoDetalhes com comentários. Faltando 'apenas
 
 ## ProdutoEditar
 
-Por enquanto o ProdutoEditar não edita o produto, ele apenas permite novos comentários e sua implementação requer um ajuste no componente ProdutoComentario.js
+21.Por enquanto o ProdutoEditar não edita o produto, ele apenas permite novos comentários e sua implementação requer um ajuste no componente ProdutoComentario.js
 
 
 
